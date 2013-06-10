@@ -3,7 +3,7 @@
 
 Here is the simple usage:
 
-```
+```go
 package main
 
 import (

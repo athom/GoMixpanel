@@ -53,6 +53,9 @@ func (this *Mixpanel) NewEvent() *MixpanelEvent {
 	e.SetMixpanel(this)
 	return e
 }
+func (this *Mixpanel) Track(name string, properties map[string]interface{}) {
+	return SendEvent(name, properties)
+}
 
 func (this *Mixpanel) SendEvent(name string, properties map[string]interface{}) (success bool, err error) {
 	e := this.NewEvent()
