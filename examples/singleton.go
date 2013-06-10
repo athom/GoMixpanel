@@ -1,9 +1,3 @@
-
-### Mixpanel API in Go
-
-Here is the simple usage:
-
-```
 package main
 
 import (
@@ -29,4 +23,3 @@ func main() {
 		fmt.Println("Put Singleton Event Success")
 	})
 }
-```
